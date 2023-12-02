@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(-45deg, black, #1a0227, #570a81, rgb(105, 3, 3));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#formcontainer {
+    position: relative;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(55px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+#formcontainer h1 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+#formcontainer .inputbox {
+    position: relative;
+    margin: 30px 0;
+    max-width: 310px;
+    border-bottom: 2px solid #fff;
+}
+
+#formcontainer .inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+
+#formcontainer input:focus~label {
+    top: -5px;
+}
+
+
+
+#formcontainer input:not(:placeholder-shown)~label {
+    top: -5px;
+}
+
+#formcontainer .inputbox input {
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+
+
+#formcontainer .forget {
+    margin: 35px 0;
+    font-size: 0.85rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#formcontainer .forget label {
+    display: flex;
+    align-items: center;
+    accent-color: rgb(128, 0, 128);
+}
+
+#formcontainer .forget label input {
+    margin-right: 3px;
+}
+
+#formcontainer .forget a {
+    color: wheat;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+#formcontainer .forget a:hover {
+    text-decoration: underline;
+}
+
+#formcontainer button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: rgb(255, 255, 255, 1);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+#formcontainer button:hover {
+    background-color: #9675AB;
+}
+
+#formcontainer .register {
+    font-size: 0.9rem;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+#formcontainer .register p a {
+    text-decoration: none;
+    color: wheat;
+    font-weight: 600;
+}
+
+#formcontainer .register p a:hover {
+    text-decoration: underline;
+}

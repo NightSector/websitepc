@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+    background: #9675AB;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2% 13% 2% 13%;
+    background: #240339;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 150%;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a {
+    font-size: 120%;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #9675AB;
+}
+
+/* linear-gradient(180deg, rgba(5, 22, 2, 0.8940388655462185) 0%, rgba(26, 2, 39, 1) 87%) */
+#home {
+    background-image: linear-gradient(180deg, rgba(5, 22, 2, 0.8940388655462185) 0%, rgba(26, 2, 39, 1) 87%), url(background.webp);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+#home h1 {
+    position: relative;
+    font-size: 350%;
+    text-align: left;
+    line-height: 1.1;
+    color: white;
+}
+
+.container {
+
+    overflow: hidden;
+    border-left: white 3px solid;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+
+#first,
+#second,
+#third {
+
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+#first {
+
+    animation-name: firstone;
+    animation-duration: 2s;
+}
+
+#second {
+    animation-name: secondone;
+    animation-duration: 2.5s;
+}
+
+#third {
+    animation-name: thirdone;
+    animation-duration: 3s;
+}
+
+
+
+/* animations */
+
+@keyframes firstone {
+    from {
+        left: -800px;
+    }
+
+    to {
+        left: 0.1px;
+    }
+}
+
+@keyframes secondone {
+    from {
+        left: -800px;
+    }
+
+    to {
+        left: 0.1px;
+    }
+}
+
+@keyframes thirdone {
+    from {
+        left: -800px;
+    }
+
+    to {
+        left: 0.1px;
+    }
+}
+
+@keyframes getstarted {
+    from {
+        top: 200px;
+    }
+
+    to {
+        top: 10px;
+    }
+}
+
+/* end of animtaions */
+
+#home div a {
+
+    position: relative;
+
+    top: 10px;
+
+    font-size: 20px;
+
+    text-decoration: none;
+
+    color: wheat;
+    animation-name: getstarted;
+    animation-duration: 3.5s;
+}
+
+#about {
+    background-color: #1a0227;
+}
+
+
+.aboutdiv div {
+    overflow: hidden;
+    overflow-wrap: break-word;
+    width: 50%;
+    font-size: 30px;
+    padding-left: 10px;
+
+}
+
+.aboutdiv img {
+    position: relative;
+
+    left: 20%;
+}
+
+
+.aboutdiv {
+    display: flex;
+}
+
+
+
+#services {
+    background-color: #1a0227;
+}
+
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1f242d;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+#services div {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+#signnow {
+    position: relative;
+    font-size: 999%;
+    word-spacing: 1vw;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    line-height: 70%;
+    transition: 2ms;
+    top: 100px;
+}
+
+#now {
+    position: relative;
+    letter-spacing: 10px;
+    left: -13px;
+    transition: 1s;
+    top: 30px;
+}
+
+#already {
+    font-size: 20px;
+    text-decoration: none;
+    color: wheat;
+    position: relative;
+    top: 200px;
+    text-align: center;
+
+}
+
+#signup {
+    position: relative;
+    letter-spacing: 10px;
+    left: 13px;
+    transition: 1s;
+}
+
+
+
+#signnow:hover {
+    text-shadow: 10px 20px 15px rgb(83, 4, 99), 0 0 20px white, 0 0 40px rgb(83, 4, 99);
+
+    #signup {
+        left: -20px;
+    }
+}
+
+#signnow:hover {
+    #now {
+        left: 20px;
+    }
+
+
+}
+
+
+#portfolio {
+    background: #1a0227;
+}
+
+
+
+#formcontainer {
+    position: relative;
+    max-width: 400px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(55px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+#formcontainer h1 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+#formcontainer .inputbox {
+    position: relative;
+    margin: 30px 0;
+    max-width: 310px;
+    border-bottom: 2px solid #fff;
+}
+
+#formcontainer .inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+
+#formcontainer input:focus~label {
+    top: -5px;
+}
+
+
+
+#formcontainer input:not(:placeholder-shown)~label {
+    top: -5px;
+}
+
+
+
+
+#formcontainer .inputbox input {
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+
+
+#formcontainer .forget {
+    margin: 35px 0;
+    font-size: 0.85rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#formcontainer .forget label {
+    display: flex;
+    align-items: center;
+    accent-color: rgb(128, 0, 128);
+}
+
+#formcontainer .forget label input {
+    margin-right: 3px;
+}
+
+#formcontainer .forget a {
+    color: wheat;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+#formcontainer .forget a:hover {
+    text-decoration: underline;
+}
+
+#formcontainer button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: rgb(255, 255, 255, 1);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+#formcontainer button:hover {
+    background-color: #9675AB;
+}
+
+#formcontainer .register {
+    font-size: 0.9rem;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+#formcontainer .register p a {
+    text-decoration: none;
+    color: wheat;
+    font-weight: 600;
+}
+
+#formcontainer .register p a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 995px),
+screen and (max-height: 700px) {
+    .logo {
+        display: none;
+    }
+
+    header {
+        padding: 0px;
+    }
+
+    nav a {
+        font-size: 190%;
+    }
+
+    #now {
+        display: none;
+    }
+
+    #signnow {
+        letter-spacing: 0px;
+        font-size: 85px;
+    }
+
+    #already {
+        top: 130px;
+    }
+
+    .aboutdiv .image {
+        display: none;
+    }
+
+    .aboutdiv {
+        display: block;
+    }
+
+    .aboutdiv div {
+        width: 100%;
+    }
+
+    #clock {
+        display: none;
+    }
+}
+
+
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#clock {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
