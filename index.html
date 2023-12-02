@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildMyPc.com</title>
+    <link rel="stylesheet" href="style/style.css">
+
+
+
+
+</head>
+
+<body onload="startTime()">
+
+
+
+    <header>
+        <a href="#" class="logo">BUILD MY PC</a>
+        <p id="clock"></p>
+        <nav>
+            <a href="#home" class="active">WELCOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#services">SIGN UP</a>
+            <a href="#portfolio">GET STARTED</a>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="container">
+            <h1 id="first">the ultimate tool </h1>
+            <h1 id="second">to build</h1>
+            <h1 id="third">your pc</h1>
+            <a href="#about">Explore now</a>
+        </div>
+    </section>
+
+
+
+
+    <section id="about">
+        <div class="aboutdiv">
+            <div>
+                <h1>About</h1>
+                <p>building your dream computer is easy and exciting. Explore top-quality components, follow
+                    straightforward
+                    guides, and create a customized PC that suits your needs. Join us and start building today!
+                </p>
+            </div>
+            <div class="image">
+                <img src="giphy.gif" alt="computer">
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <section id="services">
+        <div>
+            <a id="signnow" href="signup/signin.html"> <span id="signup">SIGN UP</span> <br> <span id="now">NOW</span>
+            </a>
+            <a id="already" href="#portfolio">Already have an account? Login now</a>
+        </div>
+    </section>
+    <section id="portfolio">
+
+        <div id="formcontainer">
+
+            <form>
+                <h1>Login</h1>
+                <div class="inputbox">
+                    <input type="email" required placeholder=" ">
+                    <label for="">Email</label>
+                </div>
+                <div class="inputbox">
+                    <input type="password" required placeholder=" ">
+                    <label for="">Password</label>
+                </div>
+                <div class="forget">
+                    <label for="Remember"><input type="checkbox" id="Remember">Remember Me</label>
+                    <a href="#"> Forgot Password?</a>
+                </div>
+                <button>Log in</button>
+                <div class="register">
+                    <p>Don't have an account <a href="#services"> &nbsp; Sign up</a></p>
+                </div>
+        </div>
+        </form>
+    </section>
+
+    <script>
+        function startTime() {
+            const today = new Date();
+            let h = today.getHours();
+            let m = today.getMinutes();
+            let s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('clock').innerHTML = h + ":" + m + ":" + s;
+            setTimeout(startTime, 1000);
+        }
+
+        function checkTime(i) {
+            if (i < 10) { i = "0" + i };
+            return i;
+        }
+    </script>
+
+
+
+</body>
+</section>
+
+<script src="script.js"></script>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+</html>
